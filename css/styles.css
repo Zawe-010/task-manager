@@ -1,0 +1,219 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+    height: 100%;
+    /* Full height for the page */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styles */
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    border-bottom: 4px solid #2980b9;
+}
+
+header h1 {
+    margin: 0;
+    text-decoration: underline;
+    /* Underline the header */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Main content styles */
+main {
+    flex: 1;
+    /* Makes main fill available space */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding-bottom: 60px;
+    /* Extra bottom padding for footer space */
+    overflow-y: auto;
+    /* Allow scrolling if content is too long */
+}
+
+/* Footer styles */
+footer {
+    background-color: #2980b9;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Button Styles */
+.btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2ecc71;
+}
+
+/* Task Manager Pages */
+.task-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.task-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.task-form input,
+.task-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.task-form textarea {
+    height: 100px;
+}
+
+.task-form button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Task List Styles */
+.task-list {
+    margin-top: 30px;
+    max-height: 400px;
+    /* Limit the height of the task list */
+    overflow-y: auto;
+    /* Allow scrolling if there are too many tasks */
+}
+
+.task-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-list li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.task-list li span {
+    color: #2980b9;
+}
+
+/* Responsive Design for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    header nav ul {
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .task-form input,
+    .task-form textarea,
+    .task-form button {
+        width: 100%;
+    }
+
+    /* Task Manager Styling Adjustments for Mobile */
+    .task-list li {
+        padding: 10px;
+    }
+
+    /* Remove fixed footer positioning on small screens */
+    footer {
+        position: relative;
+        /* Change from fixed to relative */
+        bottom: auto;
+    }
+}
+
+/* Responsive Design for Tablets and Above */
+@media only screen and (min-width: 600px) {
+
+    .task-form input,
+    .task-form textarea {
+        width: 80%;
+    }
+
+    .task-form button {
+        width: auto;
+    }
+}
+
+/* Reduce bottom padding for Tablets (600px - 1024px width) */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    main {
+        padding-bottom: 30px;
+        /* Reduce the bottom gap for tablets */
+    }
+}
+
+/* Underline all headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-decoration: underline;
+}
