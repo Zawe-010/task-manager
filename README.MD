@@ -1,7 +1,3 @@
-Certainly! Here's the content rewritten as it is:
-
----
-
 # Task Manager
 
 A simple task management application to help you stay organized and keep track of your tasks. The app allows you to add, view, and delete tasks, with data persisted in the browser's localStorage. Whether you're organizing personal tasks, work projects, or school assignments, this app provides a clean and user-friendly interface to manage your to-do list.
