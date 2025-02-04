@@ -7,9 +7,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
     height: 100%;
-    /* Full height for the page */
     min-height: 100vh;
-    /* Ensure the body takes at least the full viewport height */
 }
 
 /* Header styles */
@@ -24,7 +22,6 @@ header {
 header h1 {
     margin: 0;
     text-decoration: underline;
-    /* Underline the header */
 }
 
 header nav ul {
@@ -56,11 +53,8 @@ main {
     margin: 0 auto;
     background-color: #fff;
     padding-bottom: 60px;
-    /* Extra bottom padding for footer space */
     overflow-y: auto;
-    /* Allow scrolling if content is too long */
     min-height: calc(100vh - 160px);
-    /* Ensure that main takes most of the viewport height minus header/footer height */
 }
 
 /* Footer styles */
@@ -71,7 +65,6 @@ footer {
     padding: 10px;
     width: 100%;
     position: relative;
-    /* Ensures footer doesn't overlay content */
 }
 
 /* Button Styles */
@@ -136,9 +129,7 @@ footer {
 .task-list {
     margin-top: 30px;
     max-height: 400px;
-    /* Limit the height of the task list */
     overflow-y: auto;
-    /* Allow scrolling if there are too many tasks */
 }
 
 .task-list ul {
@@ -184,7 +175,6 @@ footer {
     /* Remove fixed footer positioning on small screens */
     footer {
         position: relative;
-        /* Change from fixed to relative */
         bottom: auto;
     }
 }
@@ -206,7 +196,6 @@ footer {
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
     main {
         padding-bottom: 30px;
-        /* Reduce the bottom gap for tablets */
     }
 }
 
